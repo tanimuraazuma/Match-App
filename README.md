@@ -35,3 +35,51 @@ Match App
   * gem carrierwave
   * gem bootstrap
 
+# usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|e-mail|string|null: false, unique: true|
+|password|string|null: false, unique: true|
+|self_introduction|string|
+|sex|integer|null: false|
+|img_name|string|null: false|
+### Association
+- has_many :chat_messages
+- has_many :chat_room_users
+
+# reactionsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|to_user_id|integer|null: false|
+|from_user_id|integer|null: false|
+|status|integer|null: false|
+### Association
+- belongs_to :to_user
+- belongs_to :from_user
+
+# chat_roomsテーブル
+|Column|Type|Options|
+|------|----|-------|
+### Association
+- has_many :chat_messages
+- has_many :chat_room_users
+
+# chat_messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|chat_room_id|integer|null: false,|
+|user_id|integer|null: false|
+|message|string|null: false|
+### Association
+- belongs_to :chat_room
+- belongs_to :user
+
+# chat_room_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|chat_room_id|integer|null: false,|
+|user_id|integer|null: false|
+### Association
+- belongs_to :chat_room
+- belongs_to :user
