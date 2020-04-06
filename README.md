@@ -22,7 +22,7 @@ Match App
 <img width="1439" alt="スクリーンショット 2020-04-05 22 29 29" src="https://user-images.githubusercontent.com/60652767/78499813-cfe1d780-778d-11ea-81e7-ea7eab179028.png">
 
 メッセージ機能
-<img width="1440" alt="スクリーンショット 2020-04-06 17 21 01" src="https://user-images.githubusercontent.com/60652767/78538483-09692000-782c-11ea-896a-03dfa33da900.png">
+<img width="1440" alt="スクリーンショット 2020-04-06 17 30 33" src="https://user-images.githubusercontent.com/60652767/78538732-6cf34d80-782c-11ea-9fb6-aadc5df4e98b.png">
 
 # 開発環境
   * Html
